@@ -1,205 +1,154 @@
-<?php
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title></title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="themes/base/jquery.ui.all.css">
+	<script src="jquery-1.7.1.js"></script>
+	<script src="ui/jquery.ui.core.js"></script>
+	<script src="ui/jquery.ui.widget.js"></script>
+	<script src="ui/jquery.ui.tabs.js"></script>
+	<link rel="stylesheet" href="css/demos.css">
+<script>
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+	</script>
+</head>
+</head>
+<body>
+	<img class="logo" src="images/logo.png" width="180" height="180">
+	<div class="Navigation">
+		<div id="NavigationInside">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Gallery</a>
+					<ul class="horizontal">
+						<li><a href="#">Landscape</a>
+							<div class="extended">
+								<div class="arrow-up"></div>
+								<h2>Mac Mini</h2>
+								<span>Starting at $799</span>
+								<img src="images/macMini.png" alt="Mac Mini"/>
+								<p>Introducing the new Mac mini. Redesigned in a very big way. Mac mini is the world's most energy efficient desktop computer.</p>
+								<ul class="smallNav">
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Features</a></li>
+									<li><a href="#">Why Mac Mini</a></li>
+									<li><a href="#">Performance</a></li>
+									<li><a href="#">Tech Specs</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">Portrait</a>
+							<div class="extended">
+								<div class="arrow-up"></div>
+								<h2>Mac Pro</h2>
+								<span>Starting at 2599</span>
+								<img src="images/Pro.png" alt="Mac Pro"/>
+								<p>The new Mac Pro. With up to 12 cores of processing power, it's the fastest Mac ever.</p>
+								<ul class="smallNav">
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Features</a></li>
+									<li><a href="#">Why Mac Mini</a></li>
+									<li><a href="#">Performance</a></li>
+									<li><a href="#">Tech Specs</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Contact Us</a>
+					<ul class="horizontal">
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					</ul>
+				</li>
+				<li><a href="register.php">Register</a>
+				<div class="ultraNav">
+						<div class="arrow-up"></div>
+						<h2>Daftar Sekarang</h2>
+						<img src="images/account1.png" alt="New Account" width="160" height="160"/>
+						<p class="tulisan">Daftar sekarang untuk menikmati kemudahan dalam pembuatan suatu sertifikat.</p>
+					</div>
+				</li>
+				<li><a href="#">Login</a>
+					<div class="ultraNav">
+					<div class="arrow-up"></div>
+					<h2>Masukkan Username dan Password</h2>
+						<ul class="ultra2">
+							<li class="a" valign="middle">Username</li>
+							<li class="a" valign="middle">Password</li>
+						</ul>
+						<ul class="ultra3">
+							<li valign="top"><input type="text" name="username" size="20px"></li>
+							<li valign="top"><input type="password" name="password" size="20px"></li>
+							<li><input type="image" name="login" src="images/login.png" height="25px" width="60px"></li>
+							
+						</ul>
+					</div>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<br>
+	<center>
+	<table class="content" border="0" width=65% style="background:url('images/gradient2.png') repeat-x; border-collapse: collapse;">
+	<tr>
+		<td width=25% valign="top"><img src="images/welcome.png"></td>
+		<td width=100% class="date"><form class="searchform">
+					<input class="searchfield" type="text" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+					<input class="searchbutton" type="button" value="Go" />
+					</form></td>
+	</tr>
+	<tr>
+		<td width=25% class="font1">Selamat Datang di <b>Automatic Certificate Generator</b>. Disini Anda bisa membuat sertifikat suatu kepanitiaan secara otomatis. Pilih desain, masukkan Nama, Instansi, dan lainnya lalu create. Mudah, Simple, dan Cepat. </td>
+		<td width=100% class="tabbox" rowspan="3" valign="top"><div class="demo">
 
-/*
- *---------------------------------------------------------------
- * APPLICATION ENVIRONMENT
- *---------------------------------------------------------------
- *
- * You can load different configurations depending on your
- * current environment. Setting the environment also influences
- * things like logging and error reporting.
- *
- * This can be set to anything, but default usage is:
- *
- *     development
- *     testing
- *     production
- *
- * NOTE: If you change these, also change the error_reporting() code below
- *
- */
-	define('ENVIRONMENT', 'development');
-/*
- *---------------------------------------------------------------
- * ERROR REPORTING
- *---------------------------------------------------------------
- *
- * Different environments will require different levels of error reporting.
- * By default development will show errors but testing and live will hide them.
- */
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Nunc tincidunt</a></li>
+		<li><a href="#tabs-2">Donatur</a></li>
+		<li><a href="#tabs-3">About Us</a></li>
+	</ul>
+	<div id="tabs-1">
+		<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+	</div>
+	<div id="tabs-2">
+		<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+	</div>
+	<div id="tabs-3">
+		<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+		<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+	</div>
+</div>
 
-if (defined('ENVIRONMENT'))
-{
-	switch (ENVIRONMENT)
-	{
-		case 'development':
-			error_reporting(E_ALL);
-		break;
-	
-		case 'testing':
-		case 'production':
-			error_reporting(0);
-		break;
-
-		default:
-			exit('The application environment is not set correctly.');
-	}
-}
-
-/*
- *---------------------------------------------------------------
- * SYSTEM FOLDER NAME
- *---------------------------------------------------------------
- *
- * This variable must contain the name of your "system" folder.
- * Include the path if the folder is not in the same  directory
- * as this file.
- *
- */
-	$system_path = 'system';
-
-/*
- *---------------------------------------------------------------
- * APPLICATION FOLDER NAME
- *---------------------------------------------------------------
- *
- * If you want this front controller to use a different "application"
- * folder then the default one you can set its name here. The folder
- * can also be renamed or relocated anywhere on your server.  If
- * you do, use a full server path. For more info please see the user guide:
- * http://codeigniter.com/user_guide/general/managing_apps.html
- *
- * NO TRAILING SLASH!
- *
- */
-	$application_folder = 'application';
-
-/*
- * --------------------------------------------------------------------
- * DEFAULT CONTROLLER
- * --------------------------------------------------------------------
- *
- * Normally you will set your default controller in the routes.php file.
- * You can, however, force a custom routing by hard-coding a
- * specific controller class/function here.  For most applications, you
- * WILL NOT set your routing here, but it's an option for those
- * special instances where you might want to override the standard
- * routing in a specific front controller that shares a common CI installation.
- *
- * IMPORTANT:  If you set the routing here, NO OTHER controller will be
- * callable. In essence, this preference limits your application to ONE
- * specific controller.  Leave the function name blank if you need
- * to call functions dynamically via the URI.
- *
- * Un-comment the $routing array below to use this feature
- *
- */
-	// The directory name, relative to the "controllers" folder.  Leave blank
-	// if your controller is not in a sub-folder within the "controllers" folder
-	// $routing['directory'] = '';
-
-	// The controller class file name.  Example:  Mycontroller
-	// $routing['controller'] = '';
-
-	// The controller function you wish to be called.
-	// $routing['function']	= '';
-
-
-/*
- * -------------------------------------------------------------------
- *  CUSTOM CONFIG VALUES
- * -------------------------------------------------------------------
- *
- * The $assign_to_config array below will be passed dynamically to the
- * config class when initialized. This allows you to set custom config
- * items or override any default config values found in the config.php file.
- * This can be handy as it permits you to share one application between
- * multiple front controller files, with each file containing different
- * config values.
- *
- * Un-comment the $assign_to_config array below to use this feature
- *
- */
-	// $assign_to_config['name_of_config_item'] = 'value of config item';
-
-
-
-// --------------------------------------------------------------------
-// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
-// --------------------------------------------------------------------
-
-/*
- * ---------------------------------------------------------------
- *  Resolve the system path for increased reliability
- * ---------------------------------------------------------------
- */
-
-	// Set the current directory correctly for CLI requests
-	if (defined('STDIN'))
-	{
-		chdir(dirname(__FILE__));
-	}
-
-	if (realpath($system_path) !== FALSE)
-	{
-		$system_path = realpath($system_path).'/';
-	}
-
-	// ensure there's a trailing slash
-	$system_path = rtrim($system_path, '/').'/';
-
-	// Is the system path correct?
-	if ( ! is_dir($system_path))
-	{
-		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
-	}
-
-/*
- * -------------------------------------------------------------------
- *  Now that we know the path, set the main path constants
- * -------------------------------------------------------------------
- */
-	// The name of THIS file
-	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
-
-	// The PHP file extension
-	// this global constant is deprecated.
-	define('EXT', '.php');
-
-	// Path to the system folder
-	define('BASEPATH', str_replace("\\", "/", $system_path));
-
-	// Path to the front controller (this file)
-	define('FCPATH', str_replace(SELF, '', __FILE__));
-
-	// Name of the "system folder"
-	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+</div><p>
+	<img class="date" src="images/jam1.png" width="24" height="24" valign="middle">&nbsp;&nbsp;<b><?php
+		$today = date("F j, Y, G:i a");
+		echo $today;
+		?></b></p>
+		</td>
+	</tr>
+	<tr>
+		<td width=25% valign="top"><img class="cer" src="images/sertifikat.png" width="350" height="207"></td>
+	</tr>
+	<tr>
+		<td width=25% height="50" class="font1">Daftar sekarang untuk menikmati kemudahan dalam pembuatan suatu sertifikat.</td>
+	</tr>
+	<tr>
+		<td width=25% height="90" valign="top"><center><a href="register.php"><input type="image" alt="submit" src="images/register.png" onmouseover="this.src='images/register2.png'" 
+onmouseout="this.src='images/register.png'"></a></center></td>
+		<td width=100% class="tabbox1" valign="top"><img src="images/tulisan.png"><br><img class="fb" src="images/fb.png" width="36" height="36" alt="Facebook">&nbsp;&nbsp;<img class="twit" src="images/twit.png" width="40" height="40">&nbsp;&nbsp;<img class="go" src="images/g+.png" width="40" height="40"></td>
+	</tr>
+	</table>
+	<table border="0" width=65%>
+	<tr>
+		<td class="footer"><img src="images/footer1.png"></td>
+	</tr>
+	</table>
+	</center>
 
 
-	// The path to the "application" folder
-	if (is_dir($application_folder))
-	{
-		define('APPPATH', $application_folder.'/');
-	}
-	else
-	{
-		if ( ! is_dir(BASEPATH.$application_folder.'/'))
-		{
-			exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
-		}
-
-		define('APPPATH', BASEPATH.$application_folder.'/');
-	}
-
-/*
- * --------------------------------------------------------------------
- * LOAD THE BOOTSTRAP FILE
- * --------------------------------------------------------------------
- *
- * And away we go...
- *
- */
-require_once BASEPATH.'core/CodeIgniter.php';
-
-/* End of file index.php */
-/* Location: ./index.php */
+</body>
+</html>
